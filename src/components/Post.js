@@ -1,15 +1,11 @@
 import {Link, useNavigate} from 'react-router-dom'
+import "./Post.css"
 
 const divStyle = {
   textAlign: 'center',
-  border: '3px solid',
+  border: '2px solid',
   margin: '10px auto',
-  width: '80%'
-}
-
-const titleStyle = {
-  color: '#006643',
-  fontSize: '4em'
+  width: '50%',
 }
 
 const Post = ({post, deleteBlog}) => {
@@ -23,11 +19,10 @@ const Post = ({post, deleteBlog}) => {
   return (
     <div style={divStyle}>
       <Link to={`/post/${post.id}`}>
-       <h1 style={titleStyle}>{post.title}</h1>
+       <h1 className="title"> {post.title}</h1>
       </Link>
-      <h2>{post.body}</h2>
       <form onSubmit={handleDelete}>
-        <input type='submit' value='Delete' />
+        <input className="delete-button" type='submit' value='Delete' />
       </form>
     </div>
   )

@@ -41,6 +41,7 @@ const Form = (props) => {
         onChange={handleChange}
         value={formData.title}
         name='title'
+        size= '30'
       />
         <h3>Body</h3>
       <input 
@@ -48,6 +49,7 @@ const Form = (props) => {
         onChange={handleChange}
         value={formData.body}
         name='body'
+        size='100'
       />
       <input type='submit' value={props.buttonLabel}/>
     </form>

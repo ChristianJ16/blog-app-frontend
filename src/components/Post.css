@@ -1,0 +1,15 @@
+.delete-button {
+  all: unset;
+  margin-bottom: 5px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.delete-button:hover {
+  color: red
+}
+
+.title {
+  color: navy;
+  font-size: 35px
+}

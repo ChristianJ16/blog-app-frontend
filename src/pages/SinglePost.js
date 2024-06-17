@@ -7,13 +7,13 @@ const SinglePost = ({posts}) => {
   const currentPost = useMemo(() => posts.find(post => post.id === parseInt(params.id)), [params.id, posts])
   return (
     <div>
-      <h1>{currentPost.title}</h1>
-      <h2>{currentPost.body}</h2>
+      <h1 className="post-title">{currentPost.title}</h1>
+      <p className="post-body">{currentPost.body}</p>
       <Link to={`/edit/${params.id}`}>
-        <button>Edit Blog</button>
+        <button className="edit-button">Edit Blog</button>
       </Link>
       <Link to={'/'}>
-        <button>Go Back</button>
+        <button className="back-button">Go Back</button>
       </Link>
     </div>
   )

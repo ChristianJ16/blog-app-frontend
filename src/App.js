@@ -52,7 +52,6 @@ function App() {
 
   return (
     <div className="App">
-      <h1>My Blogs</h1>
       <Routes>
         <Route
           exact 
@@ -74,7 +73,7 @@ function App() {
           exact 
           path= "/edit/:id"
           element={<Form posts={posts} handleSubmit={handleFormSubmission}
-          buttonLebel='Edit Blog' formType='edit'/>}
+          buttonLabel='Edit Blog' formType='edit'/>}
         />
       </Routes>
     </div>

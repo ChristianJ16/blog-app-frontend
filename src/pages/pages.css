@@ -1,0 +1,29 @@
+.create-button {
+  all: unset;
+  margin-bottom: 5px;
+  cursor: pointer;
+  text-decoration: underline;
+  color: black
+}
+
+.create-button:hover {
+  color: navy
+}
+
+.post-title {
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+.post-body {
+  font-size: 20px;
+}
+
+.edit-button {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.back-button {
+  cursor: pointer;
+}
